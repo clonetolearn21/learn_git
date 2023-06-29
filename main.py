@@ -1,6 +1,7 @@
 from player import Player
 
-def display_player(player):    
+def display_player(player):
+    print("Info abour this player:")    
     print(player.name)
     print(player.age)
     print(player.nation)
@@ -14,7 +15,9 @@ if __name__ == "__main__":
         club="Arsenal"  
     )
 
+
     display_player(player=player1)
+
 
 
 
