@@ -1,14 +1,23 @@
 from player import Player
 
-player1 = Player(
-    name="Bukayo Saka",
-    age=23,
-    nation="England",
-    club="Arsenal"  
-)
+def display_player(player):    
+    print(player.name)
+    print(player.age)
+    print(player.nation)
+    print(player.club)
 
-print(player1.name)
-print(player1.age)
-print(player1.nation)
-print(player1.club)
+if __name__ == "__main__":
+    player1 = Player(
+        name="Bukayo Saka",
+        age=23,
+        nation="England",
+        club="Arsenal"  
+    )
+
+    display_player(player=player1)
+
+
+
+
+
 
