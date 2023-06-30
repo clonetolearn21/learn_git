@@ -50,3 +50,11 @@ class Player:
     def position(self, new_position):
         self.__position = new_position
 
+    """ 
+    This method is actually toString() method we've known in Java  
+     """
+    def __repr__(self) -> str:
+        return f"{self.__class__.__name__}({self.__name, self.__age, self.__club,
+                                            self.__nation, self.__salary, self.__position})"
+
+
