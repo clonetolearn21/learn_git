@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
     display_player(player=player1)
 
-
+    print("This line is just to make me understand how git merge")
 
 
 
