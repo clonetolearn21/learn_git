@@ -52,6 +52,3 @@ class Player:
     def position(self, new_position):
         self.__position = new_position
 
-    @staticmethod
-    def is_this_player_rich(salary):
-        return salary >= 100000
