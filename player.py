@@ -52,7 +52,10 @@ class Player:
     def position(self, new_position):
         self.__position = new_position
 
-        
+    @staticmethod
+    def is_player_rich(salary):
+        return salary > 100000
+
     def __repr__(self) -> str:
         return f"{self.__class__.__name__}({self.__name, self.__age, self.__club,
                                             self.__nation, self.__salary, self.__position})"
