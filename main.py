@@ -25,6 +25,7 @@ if __name__ == "__main__":
     display_player(player=player1)
 
     print("This line is just to make me understand how git merge")
+    print(f"Is {player1.name} rich: {Player.is_player_rich(player1.salary)}")
 
 
 
