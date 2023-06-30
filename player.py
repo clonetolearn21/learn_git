@@ -1,9 +1,9 @@
 class Player:
 
     def __init__(
-            self, name: str, age: int, nation: str, club: str,
-            salary: float, position: str
-        ):
+        self, name: str, age: int, nation: str, club: str,
+        salary: float, position: str
+    ):
 
         assert age >= 15, "Age must be greater than 15"
 
@@ -14,15 +14,14 @@ class Player:
         self.__salary = salary
         self.__position = position
 
-
     @property
     def name(self):
         return self.__name
-    
+
     @property
     def age(self):
         return self.__age
-    
+
     @property
     def nation(self):
         return self.__nation
@@ -39,7 +38,6 @@ class Player:
     def position(self):
         return self.__position
 
-
     @club.setter
     def club(self, new_club):
         self.__club = new_club
@@ -52,5 +50,6 @@ class Player:
     def position(self, new_position):
         self.__position = new_position
 
-        
-        
+    def __repr__(self) -> str:
+        return f"{self.__class__.__name__}({self.__name, self.__age, self.__club,
+                                            self.__nation, self.__salary, self.__position})"
