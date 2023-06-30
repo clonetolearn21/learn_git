@@ -14,8 +14,7 @@ if __name__ == "__main__":
         nation="England",
         club="Arsenal"  
     )
-
-
+    
     display_player(player=player1)
 
 
