@@ -1,5 +1,7 @@
 class Player:
 
+    RATE = 0.7
+
     def __init__(
         self, name: str, age: int, nation: str, club: str,
         salary: float, position: str
@@ -50,3 +52,6 @@ class Player:
     def position(self, new_position):
         self.__position = new_position
 
+    @staticmethod
+    def is_this_player_rich(salary):
+        return salary >= 100000
